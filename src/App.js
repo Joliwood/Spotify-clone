@@ -33,16 +33,20 @@ function App() {
           user: user,
         })
       })
+
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists: playlists,
+        });
+      });
     }
   }, []);
-
-  console.log("CE GARS : ", user);
-  console.log("SON TOKEN : ", token);
 
   return (
     // Tout sera fait en BEM dans ce projet alors attention !
     <div className="app">
-      {token ? (<Player spotify={spotify} />) : (<Login />)}
+      {token ? <Player spotify={spotify} /> : <Login />}
 
     </div>
   )
