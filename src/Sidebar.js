@@ -5,10 +5,10 @@ import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import { useDataLayerValue } from "./DataLayer";
+import "./fonts/VISION/WEBFONT/stylesheet.css";
 
 function Sidebar() {
   const [{ playlists }, dispatch] = useDataLayerValue();
-  console.log(playlists);
 
   const menuPrincipal = [
     { 

@@ -12,6 +12,10 @@
     display: none;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .body__info {
     display: flex;
     align-items: flex-end;

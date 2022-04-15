@@ -4,9 +4,9 @@
     justify-content: space-between;
     bottom: 0;
     height: 65px;
-    width: 96%;
-    background-color: #282828;
-    padding: 20px;
+    width: 97%;
+    background-color: hsl(0, 0%, 16%);
+    padding: 20px 60px 20px 20px;
 }
 
 .footer__left {
